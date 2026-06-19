@@ -6,21 +6,21 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="f39d7867505e4e9ed9eb5602e8be838ed87bfa6cee1f90f78dfbe4bdee073668" />
+<meta name="csrf-token" content="7d89832da0e8e29667f8e8a3f66cd8c82123d878189a9c351a3d2e97d3767756" />
 <title>Equity Paradox Conference Registration · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606190910 />
-<link rel="stylesheet" href="css/theme.css?v=202606190910 />
-<link rel="stylesheet" href="css/pack.css?v=202606190910 />
+<link rel="stylesheet" href="css/site.css?v=202606190913 />
+<link rel="stylesheet" href="css/theme.css?v=202606190913 />
+<link rel="stylesheet" href="css/pack.css?v=202606190913 />
 </head>
 <body>
 
-<link rel="stylesheet" type="text/css" href="css/conf-commerce.css?v=202606190910/>
-<link rel="stylesheet" type="text/css" href="css/conf-site.css?v=202606190910/>
-<link rel="stylesheet" type="text/css" href="css/conf-static.css?v=202606190910/>
+<link rel="stylesheet" type="text/css" href="css/conf-commerce.css?v=202606190913/>
+<link rel="stylesheet" type="text/css" href="css/conf-site.css?v=202606190913/>
+<link rel="stylesheet" type="text/css" href="css/conf-static.css?v=202606190913/>
 <a class="skip-link" href="#main">Skip to main content</a>
 <div id="scrollbar" aria-hidden="true"></div>
 <div id="glow" aria-hidden="true"></div>
@@ -55,7 +55,16 @@
 </header>
 <main id="main" tabindex="-1">
 
-<style>#themeToggle{display:none !important}</style>
+<style>
+/* Hard light-lock: neutralize the global prefers-color-scheme:dark block on this page. */
+#themeToggle{display:none !important}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="dark"]) body{background:#fff !important;color:#15151c !important}
+  :root:not([data-theme="dark"]) [style*="#fff"],
+  :root:not([data-theme="dark"]) [style*="f4efe6"],
+  :root:not([data-theme="dark"]) [style*="fbf8f3"]{background:initial !important}
+}
+</style>
 <script>
 /* Registration page is light-only — no dark mode. */
 (function(){var H=document.documentElement;function light(){H.setAttribute('data-theme','light');}light();
@@ -2326,7 +2335,7 @@ data-product-list-layout="grid"data-meta-text-alignment="left"data-meta-vertical
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606190910></script>
+<script src="js/site.js?v=202606190913></script>
 </body>
 </html>
 
