@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="3f91c56c8b39d8b20c179639dea31a890813135d35a6f03377a7ec816db5ce71" />
+<meta name="csrf-token" content="029179be144f1cf9f173eb26fbe701d47b58426395dc8b0e5164a2a0b5ace20f" />
 <title>Sponsor Registration · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606191143" />
-<link rel="stylesheet" href="css/theme.css?v=202606191143" />
-<link rel="stylesheet" href="css/pack.css?v=202606191143" />
+<link rel="stylesheet" href="css/site.css?v=202606191148" />
+<link rel="stylesheet" href="css/theme.css?v=202606191148" />
+<link rel="stylesheet" href="css/pack.css?v=202606191148" />
 </head>
 <body>
 
@@ -92,6 +92,7 @@
 .xsell .meta span{color:rgba(255,255,255,.85);font-size:.88rem}
 .xsell .add{background:#f1f1ef;color:#2a2a2a;border-radius:999px;padding:.6em 1.6em;font-size:.92rem;text-decoration:none;font-weight:300}
 .xsell .add:hover{background:#fff}
+.pd-note{color:rgba(255,255,255,.8);font-size:.82rem;margin:14px 0 0;max-width:520px}
 /* description (white) */
 .cf section.desc{padding:clamp(40px,6vw,72px) 0;background:var(--soft)}
 .cf section.desc p{font-size:1.02rem;line-height:1.8;font-weight:300;margin:0 0 1rem;max-width:760px;color:#444}
@@ -146,9 +147,10 @@
           
           <div class="buy">
             
-            <button type="button" class="btn reg-open" data-kicker="Registration / Sponsorship" data-product="Sponsor Registration" data-price="from $2,500.00" data-tier="#pdTier">Select Tier</button>
+            <a class="btn" href="https://www.racialequityinstitute.org/events/p/sponsor-registration">Select Tier</a>
           </div>
 
+          <p class="pd-note">Secure checkout is completed on the official Racial Equity Institute store.</p>
           
           <div class="xsell">
             <img src="img/conf/reg-bwstour.jpg" alt="">
@@ -182,41 +184,8 @@
     </div>
   </section>
 
-  <!-- Self-contained registration modal -->
-  <div class="reg-modal" id="regModal" hidden>
-    <div class="reg-overlay" data-close></div>
-    <div class="reg-dialog" role="dialog" aria-modal="true" aria-labelledby="regKicker">
-      <button class="reg-x" type="button" data-close aria-label="Close">&times;</button>
-      <form class="reg-form" id="regForm">
-        <p class="reg-kicker" id="regKicker">Registration</p>
-        <p class="reg-prod" id="regProd"></p>
-        <div class="reg-row">
-          <div class="field"><label>First Name</label><input name="first" required></div>
-          <div class="field"><label>Last Name</label><input name="last" required></div>
-        </div>
-        <div class="field"><label>Email</label><input type="email" name="email" required></div>
-        <div class="field"><label>Phone</label><input name="phone" required></div>
-        <div class="field"><label>Organization / Business Affiliation</label><input name="org"></div>
-        <div class="field"><label>Do you have any dietary restrictions?</label><input name="diet"></div>
-        <div class="field"><label>How did you hear about us?</label>
-          <select name="referral" required>
-            <option value="">Select an option</option>
-            <option>Email</option><option>Social media</option><option>Word of mouth</option>
-            <option>REI website</option><option>A colleague or partner</option><option>Other</option>
-          </select>
-        </div>
-        <button class="btn-red" type="submit" id="regSubmit">Register</button>
-      </form>
-      <div class="reg-done" id="regDone" hidden>
-        <div class="ck">&#10003;</div>
-        <h3>You’re registered!</h3>
-        <p id="regDoneMsg"></p>
-        <p style="margin-top:18px"><button class="btn-red" type="button" data-close>Done</button></p>
-      </div>
-    </div>
-  </div>
-  <script src="js/lightlock.js?v=202606191143"></script>
-  <script src="js/events.js?v=202606191143"></script>
+  <script src="js/lightlock.js?v=202606191148"></script>
+  <script src="js/events.js?v=202606191148"></script>
 </div>
 </main>
 <footer role="contentinfo">
@@ -250,7 +219,7 @@
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606191143"></script>
+<script src="js/site.js?v=202606191148"></script>
 </body>
 </html>
 
