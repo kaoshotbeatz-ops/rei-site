@@ -1,5 +1,16 @@
 /* Equity Paradox registration — in-site modal (no external redirects). */
 (function () {
+  // quantity stepper (product pages)
+  var qtyVal = document.getElementById('qtyVal');
+  if (qtyVal) {
+    document.querySelectorAll('.qty button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var n = Math.max(1, (parseInt(qtyVal.textContent, 10) || 1) + parseInt(b.dataset.step, 10));
+        qtyVal.textContent = n;
+      });
+    });
+  }
+
   var modal = document.getElementById('regModal');
   if (!modal) return;
   var form = document.getElementById('regForm'),
